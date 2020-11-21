@@ -7,10 +7,10 @@
 	$ACCEPTABLE_DIFFERENCE = 10000;
 
 	//Tiền tố điền trước mã đơn hàng để tạo mã cho khách hàng chuyển tiền
-	$MEMO_PREFIX = 'DH ';
+	$MEMO_PREFIX = 'DH';
 
 	//Key bảo mật đã cấu hình bên Casso để chứng thực request
-	$HEADER_SECURE_TOKEN = 'w3bkulq38wbqdSYd';
+	$HEADER_SECURE_TOKEN = 'eogrBiWqaq';
 
 	payment_handler();
 
