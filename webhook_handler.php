@@ -46,7 +46,7 @@
 
 			$paid = $transaction->amount;
 			$total=number_format($transaction->amount, 0);
-			$order_note = "Casso thông báo nhận <b>{$total}</b> VND, nội dung <B>{$des}</B> chuyển vào <b>STK {$transaction->bank_sub_acc_id}</b>";
+			$order_note = "Casso thông báo nhận <b>{$total}</b> VND, nội dung <B>{$des}</B> chuyển vào <b>STK {$transaction->subAccId}</b>";
 			$ACCEPTABLE_DIFFERENCE = abs($ACCEPTABLE_DIFFERENCE);
 
 			if ( $paid < $ORDER_MONEY  - $ACCEPTABLE_DIFFERENCE ){
