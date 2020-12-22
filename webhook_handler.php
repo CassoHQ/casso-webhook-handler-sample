@@ -7,6 +7,7 @@
 	$ACCEPTABLE_DIFFERENCE = 10000;
 
 	//Tiền tố điền trước mã đơn hàng để tạo mã cho khách hàng chuyển tiền
+	//Không phân biệt hoa thường  : DH123, dh123, Dh123, dH123 đều dc.
 	$MEMO_PREFIX = 'DH';
 
 	//Key bảo mật đã cấu hình bên Casso để chứng thực request
@@ -72,7 +73,7 @@
 
 	function parse_order_id($des){
 		global $MEMO_PREFIX;
-		$re = '/'.$MEMO_PREFIX.'\d+/m';
+		$re = '/'.$MEMO_PREFIX.'\d+/mi';
 		preg_match_all($re, $des, $matches, PREG_SET_ORDER, 0);
 
 		if (count($matches) == 0 )
