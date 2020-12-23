@@ -6,9 +6,9 @@ curl --location --request POST 'http://localhost:3000/webhook_handler.php' \
     "data": [
         {
             "when": "2020-11-02",
-            "amount": -15200000,
+            "amount": 200500,
             "description": "DH35",
-            "cusum_balance": -15200000,
+            "cusum_balance": 15900500,
             "tid": "TF80307914",
             "subAccId": "123456789",
             "order": "2020110200001"
