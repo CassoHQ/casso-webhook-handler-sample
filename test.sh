@@ -6,13 +6,13 @@ curl --location --request POST 'http://localhost:3000/webhook_handler.php' \
     "data": [
         {
             "id" : 1, 
-            "when": "2020-11-02",
+            "tid": "TF80307914",
             "amount": 200500,
             "description": "DH35",
             "cusum_balance": 15900500,
-            "tid": "TF80307914",
+            "when": "2020-11-02",
             "subAccId": "123456789",
-            "order": "2020110200001"
+            "bank_sub_acc_id": "123456789"
         }
     ]
 }'
